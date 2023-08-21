@@ -1,0 +1,297 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a th:href="@{/}" class="logo"><i class="fas fa-house"></i>MyHome</a>
+
+         <ul>
+            <li><a href="#">post property<i class="fas fa-paper-plane"></i></a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">buy<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">house</a></li>
+                     <li><a href="#">flat</a></li>
+                     <li><a href="#">shop</a></li>
+                     <li><a href="#">ready to move</a></li>
+                     <li><a href="#">furnished</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">sell<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">post property</a></li>
+                     <li><a href="#">dashboard</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">rent</a>
+                  <ul>
+                     <li><a href="#">house</a></li>
+                     <li><a href="#">flat</a></li>
+                     <li><a href="#">shop</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">help<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a th:href="@{/about}">about us</a></i></li>
+                     <li><a th:href="@{/contact}">contact us</a></i></li>
+                     <li><a href="contact.html#faq">FAQ</a></i></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#">saved <i class="far fa-heart"></i></a></li>
+            <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">login</a></li>
+                  <li><a th:href="@{/register}">register</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+      <div class="content">
+         <h3>why choose us?</h3>
+         <p>Extraordinary and High Quality services: We have a supreme team who works rigorously to grown businesses beyond client’s expectations.</p>
+         <a href="contact.html" class="inline-btn">contact us</a>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- steps section starts  -->
+
+<section class="steps">
+
+   <h1 class="heading">3 simple steps</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/step-1.png" alt="">
+         <h3>search property</h3>
+         <p>Post property Ad to sell or rent online for Free.Sell Faster with Premium Service</p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-2.png" alt="">
+         <h3>contact agents</h3>
+         <p>Kamala Abbott Email-Kamala@gmail.com  Contact-873985983</p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-3.png" alt="">
+         <h3>enjoy property</h3>
+         <p>Flats & Apartmentsis available for Rent,Sell. This is 2 BHK with Built Up Area 1200 Sq.ft. </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- steps section ends -->
+
+<!-- review section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading">client's reviews</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Helps us to find good properties
+"The site really helps us to find good properties in the least amount of time without any headache of brokerage. I was so scared in Pune due to the issues of high deposit as well as brokerage. I was new and had no time. But then I found Real Estate. It is simply a ..."</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>It's a nice experience
+"It was a nice experience with RealEstate. They helped me to find a new home to stay as it was difficult for me,as an individual,to find a home with friendly roommates.Thankfully RealEstate helped me to get one with all kind of facilities."</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Just want to say that your service is great and response time from the tenants is fantastic! Renting my property through RealEstate was a matter of less than a day. I definitely appreciate this kind of service and Support, Thank you so much Real Estate for helping me out.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Actually I am really Impressed. I was concerned it would take a long time to rent out my property, but the response came by return from the tenants, which was great and with in two days got my property rented out via RealEstate, with no delays.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>It was a nice experience with RealEstate. They helped me to find a new home to stay as it was difficult for me,as an individual,to find a home with friendly roommates.Thankfully RealEstate helped me to get one with all kind of facilities.</p>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-6.png" alt="">
+            <div>
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+         <p>Renting a property has always been frustrating for me because of no direct communication between the two parties. Brokers become inevitable who unfortunately in my experience are very unprofessional.</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
+         <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>shaikhanas@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.html"><span>home</span></a>
+         <a href="about.html"><span>about</span></a>
+         <a href="contact.html"><span>contact</span></a>
+         <a href="listings.html"><span>all listings</span></a>
+         <a href="#"><span>saved properties</span></a>
+      </div>
+ 
+       <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
